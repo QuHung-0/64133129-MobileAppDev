@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".BMICalculatorActivity">
+
+	<!-- EditText for height input -->
+	<EditText
+		android:id="@+id/heightInput"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:hint="Nhập chiều cao (m)"
+		android:inputType="numberDecimal"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginTop="50dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginEnd="32dp"/>
+
+	<!-- EditText for weight input -->
+	<EditText
+		android:id="@+id/weightInput"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:hint="Nhập Khối Lượng (Kg)"
+		android:inputType="numberDecimal"
+		app:layout_constraintTop_toBottomOf="@id/heightInput"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginTop="16dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginEnd="32dp"/>
+
+	<!-- Button to calculate BMI -->
+	<Button
+		android:id="@+id/calculateBMIButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Tính BMI"
+		android:onClick="calculateBMI"
+		app:layout_constraintTop_toBottomOf="@id/weightInput"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginTop="20dp"/>
+
+	<!-- TextView to display BMI result -->
+	<TextView
+		android:id="@+id/bmiResult"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="BMI: "
+		android:textSize="18sp"
+		app:layout_constraintTop_toBottomOf="@id/calculateBMIButton"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_marginTop="20dp"/>
+
+	<!-- Return button to go back to main screen -->
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="Return"
+		android:text="Return"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		android:layout_marginBottom="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
