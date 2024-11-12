@@ -1,4 +1,4 @@
-package ntu.edu.tinhoc123.quanlychitieu;
+package vn.edu.tinhoc123.quanlychitieu;
 
 import org.junit.Test;
 

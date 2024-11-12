@@ -1,13 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.google.gms.google.services)
+
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "ntu.edu.tinhoc123.quanlychitieu"
+    namespace = "vn.edu.tinhoc123.quanlychitieu"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ntu.edu.tinhoc123.quanlychitieu"
+        applicationId = "vn.edu.tinhoc123.quanlychitieu"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -32,11 +36,12 @@ android {
 }
 
 dependencies {
-
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

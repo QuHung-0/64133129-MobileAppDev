@@ -1,4 +1,4 @@
-package ntu.edu.tinhoc123.quanlychitieu;
+package vn.edu.tinhoc123.quanlychitieu;
 
 import android.content.Context;
 
@@ -23,6 +23,6 @@ public class ExampleInstrumentedTest
     {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("ntu.edu.tinhoc123.quanlychitieu", appContext.getPackageName());
+        assertEquals("vn.edu.tinhoc123.quanlychitieu", appContext.getPackageName());
     }
 }
