@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp">
+
+	<!-- Nhập chiều cao -->
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/inputHeight"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:hint="Chiều cao (m)"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintWidth_percent="0.8" />
+
+	<!-- Nhập cân nặng -->
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/inputWeight"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:hint="Cân nặng (kg)"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/inputHeight"
+		app:layout_constraintWidth_percent="0.8" />
+
+	<!-- CheckBox chọn người Châu Á -->
+	<CheckBox
+		android:id="@+id/isAsianCheckbox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="Là người Châu Á"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/inputWeight" />
+
+	<!-- Nút tính BMI -->
+	<Button
+		android:id="@+id/btnCalculate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="Tính BMI"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/isAsianCheckbox" />
+
+	<!-- Hiển thị kết quả -->
+	<TextView
+		android:id="@+id/resultText"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="Kết quả: "
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/btnCalculate" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
