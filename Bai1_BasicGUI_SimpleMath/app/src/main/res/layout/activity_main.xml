@@ -18,7 +18,7 @@
 		app:layout_constraintEnd_toStartOf="@+id/inputA"
 		app:layout_constraintHorizontal_bias="0.419"
 		app:layout_constraintStart_toStartOf="parent"
-		tools:layout_editor_absoluteY="67dp" />
+		app:layout_constraintTop_toTopOf="@+id/inputA" />
 
 	<TextView
 		android:id="@+id/editTextText2"
@@ -110,8 +110,8 @@
 
 	<Button
 		android:id="@+id/btnCalculate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="135dp"
+		android:layout_height="67dp"
 		android:layout_marginTop="24dp"
 		android:text="Thực Hiện"
 		app:layout_constraintEnd_toEndOf="parent"
