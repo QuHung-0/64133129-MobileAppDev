@@ -1,6 +1,8 @@
 package ntu.hung.bai5_quizappgui;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +17,47 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) ->
+
+        findViewById(R.id.cardView1).setOnClickListener(new View.OnClickListener()
         {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+            @Override
+            public void onClick(View v)
+            {
+                // Navigate to ToanActivity
+                Intent intent = new Intent(MainActivity.this, cppActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.cardView2).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // Navigate to ToanActivity
+                Intent intent = new Intent(MainActivity.this, javaActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.cardView3).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // Navigate to ToanActivity
+                Intent intent = new Intent(MainActivity.this, pythonActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.quiz).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // Navigate to ToanActivity
+                Intent intent = new Intent(MainActivity.this, quizActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

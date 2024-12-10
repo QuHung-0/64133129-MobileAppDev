@@ -21,6 +21,16 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+		<activity
+			android:name=".cppActivity"
+			></activity><activity
+			android:name=".pythonActivity"
+			></activity><activity
+			android:name=".javaActivity"
+			></activity><activity
+			android:name=".quizActivity"
+			></activity>
 	</application>
 
 </manifest>
