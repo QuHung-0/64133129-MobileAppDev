@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main_nav"
+	app:startDestination="@id/menu_cn1">
+
+	<fragment
+		android:id="@+id/menu_cn1"
+		android:name="ntu.hung.bai4_botnav_recy_vp2.cn1Fragment"
+		android:label="fragment_cn1"
+		tools:layout="@layout/fragment_cn1" />
+
+	<fragment
+		android:id="@+id/menu_cn2"
+		android:name="ntu.hung.bai4_botnav_recy_vp2.cn2Fragment"
+		android:label="fragment_cn2"
+		tools:layout="@layout/fragment_cn2" />
+
+	<fragment
+		android:id="@+id/menu_cn3"
+		android:name="ntu.hung.bai4_botnav_recy_vp2.cn3Fragment"
+		android:label="fragment_cn3"
+		tools:layout="@layout/fragment_cn3" />
+
+	<fragment
+		android:id="@+id/menu_cn4"
+		android:name="ntu.hung.bai4_botnav_recy_vp2.cn4Fragment"
+		android:label="fragment_cn4"
+		tools:layout="@layout/fragment_cn4" />
+</navigation>

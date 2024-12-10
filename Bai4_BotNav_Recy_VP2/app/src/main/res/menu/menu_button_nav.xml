@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="cn1"
+		android:icon="@drawable/baseline_task_alt_24"
+		android:id="@+id/menu_cn1"/>
+
+	<item android:title="cn2"
+		android:icon="@drawable/baseline_rocket_24"
+		android:id="@+id/menu_cn2"/>
+
+	<item android:title="cn3"
+		android:icon="@drawable/baseline_star_24"
+		android:id="@+id/menu_cn3"/>
+
+	<item android:title="cn4"
+		android:icon="@drawable/baseline_info_24"
+		android:id="@+id/menu_cn4"/>
+</menu>
